@@ -2,7 +2,12 @@
     /* GLOBAL STYLES
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
-
+	*.{
+		border-radius:4px ;
+		border:dashed 1px blue ;
+	}
+	
+	
     body {
       padding-bottom: 40px;
       color: #5a5a5a;
@@ -16,12 +21,12 @@
 
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
     .navbar-wrapper {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 10;
-      margin-top: 20px;
+      margin-top: 0px;
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
     .navbar-wrapper .navbar {
@@ -38,7 +43,7 @@
 
     /* Downsize the brand/project name a bit */
     .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      /*padding: 14px 20px 16px;  Increase vertical padding to match navbar links */
       font-size: 16px;
       font-weight: bold;
       text-shadow: 0 -1px 0 rgba(0,0,0,.5);
@@ -47,6 +52,10 @@
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
       padding: 15px 20px;
+	  /*color:#d52eae;*/
+	  color:blue ;
+	  font-size:20px ;
+	  font-weight:bold ;
     }
 
     /* Offset the responsive button for proper vertical alignment */
@@ -54,14 +63,31 @@
       margin-top: 10px;
     }
 
+	.carouselOutter{
+	margin-top: 80px;
 
-
+	}
+		
+	.fbkColor{
+	color:#3e5c9a;
+	display:inline-block ;
+	}
+	.twitterColor{
+	color:#00c3f9;
+	display:inline-block ;
+	}
+	.socialMedia{
+	float:right ;
+	background-color:yellow ;
+	}
+	
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
-    /* Carousel base class */
+    
+	/* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
+	    
     }
 
     .carousel .container {
@@ -80,24 +106,21 @@
     }
 
     .carousel .item {
-      height: 500px;
+      height: 350px;
     }
     .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
       min-width: 100%;
-      height: 500px;
+      height: 350px;
     }
 
     .carousel-caption {
 	  border-radius:4px;
       background-color: rgb(0,0,0 0.5);
-      position: static;
+      
       max-width: 550px;
       padding: 0 20px;
-      margin-top: 200px;
-    }
+     }
+	 
     .carousel-caption h1,
     .carousel-caption .lead {
       margin: 0;
@@ -108,12 +131,20 @@
     .carousel-caption .btn {
       margin-top: 10px;
     }
-
+	
+	.carouselAnnex{
+		background: url("../img/noticeBoard.jpg");
+		background-size: 100%;
+		height: 352px;
+		background-color:yellow ;
+	}
 
 
     /* MARKETING CONTENT
     -------------------------------------------------- */
-
+ .marketing{
+	background-color:yellow ;
+ }
     /* Center align the text within the three columns below the carousel */
     .marketing .span4 {
       text-align: center;
@@ -170,7 +201,7 @@
       }
       .navbar-inner {
         border-radius: 0;
-        margin: -20px 0;
+        margin: 0;
       }
 
       .carousel .item {
@@ -198,7 +229,7 @@
     @media (max-width: 767px) {
 
       .navbar-inner {
-        margin: -20px;
+        margin: 0px;
       }
 
       .carousel {
@@ -243,14 +274,6 @@
 	
 	/*custom css*/
 	.navbar-inverse, .navbar-inner{
-		background-image: none ;	
-	}
-	
-	.font{
-		
-	}
-	
-	.description{
-		font-size:18px ;
-		
+		background-image: url("../img/navGrid.jpg") ;
+		font-weight:bold;	
 	}

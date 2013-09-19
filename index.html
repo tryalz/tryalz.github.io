@@ -12,6 +12,7 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="assets/css/custom.css" rel="stylesheet">
 	<link rel="shortcut icon" href="assets/img/tab.ico">
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen" />
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -20,8 +21,8 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
      <link rel="shortcut icon" href="assets/ico/favicon.ico">
   </head>
 
@@ -31,26 +32,29 @@
 
     <!-- NAVBAR
     ================================================== -->
-    <!--div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. - ->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
         <div class="navbar navbar-inverse">
           <div id="navBar" class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. - ->
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="carousel.html#">u2can</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. - ->
+            <a class="brand" href="index.html">
+				<img class="img-circle" src="assets/img/logo.png" data-src="holder.js/140x140" >
+			
+			</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active"><a href="carousel.html#">Home</a></li>
                 <li><a href="carousel.html#about">About</a></li>
                 <li><a href="carousel.html#contact">Contact</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns - ->
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
                   <a href="carousel.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -63,19 +67,33 @@
                     <li><a href="carousel.html#">One more separated link</a></li>
                   </ul>
                 </li>
+												
               </ul>
-            </div><!--/.nav-collapse - ->
-          </div><!-- /.navbar-inner - ->
-        </div><!-- /.navbar - ->
+			  <div class="socialMedia">
+				<a href="" class="nonPaddin" >
+					<i class="icon-facebook-sign icon-3x fbkColor" ></i>
+				</a>
+				<a href="" class="nonPaddin" >
+						<i class="icon-twitter-sign icon-3x twitterColor" ></i>
+				</a>
+				<a href="" class="nonPaddin" >
+					 <i class="icon-facebook-sign icon-3x" ></i>
+				</a>
+				
+			  </div>
+			  
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
 
-      </div> <!-- /.container - ->
-    </div><!-- /.navbar-wrapper - ->
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
 
-
-
+	<!-- carousel and carousel annex -->
+	<div class="carouselOutter">
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide span9">
       <div class="carousel-inner">
         <div class="item active">
           <img src="assets/img/Folder1/photo.jpg" alt="">
@@ -83,7 +101,7 @@
             <div class="carousel-caption">
               <h1 >Example headline.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="carousel.html#">Sign up today</a>
+              
             </div>
           </div>
         </div>
@@ -94,7 +112,7 @@
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="carousel.html#">Learn more</a>
+              
             </div>
           </div>
         </div>
@@ -105,7 +123,7 @@
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="carousel.html#">Browse gallery</a>
+              
             </div>
           </div>
         </div>
@@ -116,7 +134,7 @@
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="carousel.html#">Browse gallery</a>
+              
             </div>
           </div>
         </div>
@@ -127,7 +145,7 @@
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="carousel.html#">Browse gallery</a>
+              
             </div>
           </div>
         </div>
@@ -138,7 +156,7 @@
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
               <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="carousel.html#">Browse gallery</a>
+              
             </div>
           </div>
         </div>
@@ -148,17 +166,23 @@
       <a class="right carousel-control" href="carousel.html#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-
-
+	<!-- carousel annex -->
+	<div  class="span4 carouselAnnex" >
+	<img src ="assets/img/news.png">
+	body of news
+	</div>
+	
+	<!-- /carousel annex -->
+	</div> <!-- carousel and carousel-annex -->
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 	
-    <div class="container marketing">
+    <!--div class="container marketing" style="clear:both"-->
 		
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
+      <div class="row" style="clear:both">
+        <div class="span4" style="margin-left:90px">
           <img class="img-circle"  src="assets/img/tab.png" data-src="holder.js/140x140">
           <h2>The Truth</h2>
           <p class="description" >Dyslexia is characterized by difficulty with learning to read fluently and with accurate 
@@ -186,8 +210,10 @@
 		  </p>
           <!--p><a class="btn" href="carousel.html#">View details &raquo;</a></p -->
         </div><!-- /.span4 -->
+			
+		
       </div><!-- /.row -->
-
+	
 		<hr>
       <!-- FOOTER -->
       <footer>
@@ -195,7 +221,7 @@
         <p>&copy; 2013 u2can, org. &middot; <a href="carousel.html#">Privacy</a> &middot; <a href="#mycarousel">Terms</a></p>
       </footer>
 
-    </div><!-- /.container -->
+    <../div><!-- /.container -->
 
 
 

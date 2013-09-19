@@ -4414,7 +4414,9 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
+  /*
   padding: 10px 20px 10px;
+  */
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4791,7 +4793,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .navbar-inner {
-  background-color: #ffff9a;
+  background-color: rgba(255,255,255,1);
   opacity: 0.5 ;
   border-color: #252525;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
@@ -4827,7 +4829,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
-  color: blue;
+  color:;
   background-color: #ddd;
 }
 
